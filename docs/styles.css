@@ -1,0 +1,11 @@
+/* Styling for the banner */
+.banner {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Resize the image to make it smaller */
+.banner img {
+    max-width: 50px;  /* Adjust this value to control size */
+    height: auto;  /* Keep the aspect ratio */
+}

@@ -1,3 +1,10 @@
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<p class="banner">
+  <img src="images/Logo.png" alt="Elemental Fracture" />
+</p>
+
+
 # Welcome to Elemental Fracture. We're so glad you're here.
 
 On January 9, 2023, at 10:23 PST, the Spellbreak servers were officially shut down, marking the sunset of the game. However, a **community version** of the game was released to the public at the same time, which allowed some members of the community to pick up the reigns and create the community Discord Elemental Fracture. Several **weekly events** and regular **daily** games are run on private servers, allowing the community to continue dropping into the Hollowlands. This version grants access to all cosmetics and talents from the current (Chapter 3) and previous patches (pre-alpha, alpha, beta, and chapters 1-3).
@@ -10,3 +17,5 @@ We've organized our setup guide to assist as much as possible in getting you int
 - [Hosting Your Own Server](./hosting.md)
 - [Frequently Asked Questions](./faq.md)
 - [Help us stay afloat!](./support.md)
+
+
