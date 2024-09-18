@@ -22,7 +22,7 @@ title: "Elemental Fracture"
 description: >- # this means to ignore newlines until "baseurl:"
   "The Hollow Lands still beckon, breaker."
 url: "https://elefrac.com" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: ""
+baseurl: "https://elementalfracture.github.io"
 twitter_username: elefracture
 github_username:  elementalfracture
 layout: default
