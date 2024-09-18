@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Hosting your own server | Elemental Fracture</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Hosting your own server" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="“The Hollow Lands still beckon, breaker.”" />
+<meta property="og:description" content="“The Hollow Lands still beckon, breaker.”" />
+<link rel="canonical" href="https://elefrac.com/https://elementalfracture.github.io/docs/hosting.html" />
+<meta property="og:url" content="https://elefrac.com/https://elementalfracture.github.io/docs/hosting.html" />
+<meta property="og:site_name" content="Elemental Fracture" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Hosting your own server" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"“The Hollow Lands still beckon, breaker.”","headline":"Hosting your own server","url":"https://elefrac.com/https://elementalfracture.github.io/docs/hosting.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/https://elementalfracture.github.io/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://elefrac.com/https://elementalfracture.github.io/feed.xml" title="Elemental Fracture" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/https://elementalfracture.github.io/">Elemental Fracture</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/https://elementalfracture.github.io/about/">About</a><a class="page-link" href="/https://elementalfracture.github.io/docs/faq.html">Frequently Asked Questions (FAQ)</a><a class="page-link" href="/https://elementalfracture.github.io/docs/guide.html">Quick-start Guide</a><a class="page-link" href="/https://elementalfracture.github.io/docs/hosting.html">Hosting your own server</a><a class="page-link" href="/https://elementalfracture.github.io/">Welcome to Elemental Fracture</a><a class="page-link" href="/https://elementalfracture.github.io/docs/support.html">Thank you for supporting us!</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="how-to-host-a-server">How to Host a Server</h1>
+
+<p>This guide explains how to host your own match on a server you control. If you’re looking to play in someone else’s match, check out the <a href="/https://elementalfracture.github.io/docs/guide.html">setup guide</a>. <strong>While Elemental Fracture doesn’t provide explicit support in hosting your own servers, such as assistance with setting up portforwarding, we are happy to assist by providing the general steps to get set up.</strong></p>
+
+<h2 id="clients-and-servers">Clients and Servers</h2>
+
+<p>Spellbreak Community Edition is divided into two components:</p>
+
+<ul>
+  <li><strong>Client</strong>: This includes all the graphics and menus. Each player needs their own copy.</li>
+  <li><strong>Server</strong>: This runs without graphics or menus and is used to host matches. You’ll need access to the server to host a game.</li>
+</ul>
+
+<p>To host a match, the server must be accessible to the players who want to join. The guide below will help you set up your own server.</p>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+
+<ul>
+  <li><a href="#player-location-matters">Player Location Matters</a>
+    <ul>
+      <li><a href="#local-players">Local Players</a></li>
+      <li><a href="#internet-players">Internet Players</a></li>
+    </ul>
+  </li>
+  <li><a href="#running-the-server">Running the Server</a>
+    <ul>
+      <li><a href="#prerequisites">Prerequisites</a></li>
+      <li><a href="#choose-a-game-mode-and-run">Choose a Game Mode and Run</a></li>
+    </ul>
+  </li>
+  <li><a href="#additional-notes-and-troubleshooting">Additional Notes and Troubleshooting</a></li>
+</ul>
+
+<hr />
+
+<h2 id="player-location-matters">Player Location Matters</h2>
+
+<p>Players need the server’s <strong>IP address</strong> and <strong>Port number</strong> to connect. The default port for Spellbreak is <code class="language-plaintext highlighter-rouge">7777</code>.</p>
+
+<ul>
+  <li>If you’re hosting for players on the same local network, check the <a href="#local-players">Local Players</a> section.</li>
+  <li>If you’re hosting for players over the internet, check the <a href="#internet-players">Internet Players</a> section.</li>
+</ul>
+
+<h3 id="local-players">Local Players</h3>
+
+<p>If players are on the same local network (e.g., in the same house or office), finding the server’s IP is simple. Follow these steps:</p>
+
+<ol>
+  <li>Open the command prompt and enter:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ipconfig
+</code></pre></div>    </div>
+    <p>This will give you an IP address, such as:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>192.168.1.41:7777
+</code></pre></div>    </div>
+  </li>
+  <li>Share the IP:Port combo with players on the local network so they can connect.</li>
+</ol>
+
+<hr />
+
+<h3 id="internet-players">Internet Players</h3>
+
+<p>If players are not on the same local network, they will need the public IP of your server.</p>
+
+<ol>
+  <li>To find your public IP, open a browser and search for “What is my IP?”. Use the IP address displayed, like this:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>203.0.113.5:7777
+</code></pre></div>    </div>
+  </li>
+  <li>If your local and public IPs differ, your server may be behind a <strong>NAT Gateway</strong>, and you will need to configure <strong>port forwarding</strong>.</li>
+</ol>
+
+<hr />
+
+<h3 id="nat-gateways-and-port-forwarding">NAT Gateways and Port Forwarding</h3>
+
+<p>In most cases, NAT Gateways block incoming connections from the internet. You’ll need to set up <strong>port forwarding</strong> to allow players to connect.</p>
+
+<ol>
+  <li><strong>Access the configuration page</strong> for your router/modem.
+    <ul>
+      <li>This could be an app or a web page with an address like <code class="language-plaintext highlighter-rouge">http://192.168.1.1</code>.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Log in</strong> to the configuration page. If you don’t know the login credentials, search for the default password or contact your ISP.</p>
+  </li>
+  <li>
+    <p><strong>Find the Port Forwarding settings</strong>, often under menus like “Firewall” or “NAT”.</p>
+  </li>
+  <li><strong>Add a port forwarding rule</strong>:
+    <ul>
+      <li><strong>Protocol</strong>: UDP (or TCP/UDP).</li>
+      <li><strong>Device IP</strong>: The local IP of your server.</li>
+      <li><strong>Port</strong>: 7777 (or a range from 7777 to 7778).</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="running-the-server">Running the Server</h2>
+
+<p>To host a server, you need to download <a href="https://cdn.elefrac.com/server/server.zip">the server files</a>, then extract it to a folder of your choice.</p>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<p>Before running the server for the first time, install the <strong>Unreal Engine 4 Prerequisites</strong>:</p>
+
+<ul>
+  <li>For 64-bit Windows: <code class="language-plaintext highlighter-rouge">UE4PrereqSetup_x64.exe</code></li>
+  <li>For 32-bit Windows: <code class="language-plaintext highlighter-rouge">UE4PrereqSetup_x86.exe</code></li>
+</ul>
+
+<p><strong>NOTE: If you’ve already installed these for the client, you don’t need to install them again.</strong></p>
+
+<hr />
+
+<h3 id="installing-the-balance-patch">Installing the Balance Patch</h3>
+
+<p>Much like the manual setup in our <a href="/https://elementalfracture.github.io/docs/guide.html">setup guide</a>, you’ll need to install the balance patch manually.</p>
+<ol>
+  <li>Download the latest balance patch from <a href="https://cdn.elefrac.com/patch/latest.zip">here</a>.</li>
+  <li>Extract the ZIP file and place the contents into the following directory within your game folder: <code class="language-plaintext highlighter-rouge">g3/Content/Paks</code>.</li>
+</ol>
+
+<h3 id="choose-a-game-mode-and-run">Choose a Game Mode and Run</h3>
+
+<p>The server can be started by running one of the included batch files, such as <code class="language-plaintext highlighter-rouge">Start_a_Duos_server.bat</code>. This will open a terminal window, and you’ll see text scrolling by. Some lines may include “Warning,” which is normal.</p>
+
+<ol>
+  <li>If a <strong>Windows Security Alert</strong> appears, make sure both checkboxes are checked and click “Allow access”.</li>
+  <li>Players can now join by entering the IP:Port combo for the server.</li>
+</ol>
+
+<hr />
+
+<h2 id="additional-notes-and-troubleshooting">Additional Notes and Troubleshooting</h2>
+
+<ul>
+  <li>The server may take 1-2 minutes to load the world. Players will be able to join once the scrolling text stops.</li>
+  <li><strong>Avoid running multiple servers</strong> on the same machine, as they can conflict over port numbers.
+    <ul>
+      <li>Check Task Manager for any instances of <code class="language-plaintext highlighter-rouge">g3Server-Win64-Test.exe</code>. There should only be one per server.</li>
+    </ul>
+  </li>
+  <li>If a client cannot connect or remains on “connecting” for too long, check the server status and port forwarding.</li>
+  <li>Check out the <a href="/https://elementalfracture.github.io/docs/faq.html">FAQ</a> which has some additional troubleshooting steps.</li>
+</ul>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/https://elementalfracture.github.io/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Elemental Fracture</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Elemental Fracture</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/elementalfracture"><svg class="svg-icon"><use xlink:href="/https://elementalfracture.github.io/assets/minima-social-icons.svg#github"></use></svg> <span class="username">elementalfracture</span></a></li><li><a href="https://www.twitter.com/elefracture"><svg class="svg-icon"><use xlink:href="/https://elementalfracture.github.io/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">elefracture</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>&quot;The Hollow Lands still beckon, breaker.&quot;</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
