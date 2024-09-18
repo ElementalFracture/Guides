@@ -1,8 +1,8 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
 
-<p class="banner">
-  <img src="images/Logo.png" alt="Elemental Fracture" />
-</p>
+<h1 class="banner">
+ <img src="images/Logo.png" alt="Elemental Fracture" />
+</h1>
 
 
 # Welcome to Elemental Fracture. We're so glad you're here.
