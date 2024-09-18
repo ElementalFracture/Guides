@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Frequently Asked Questions (FAQ)"
+---
+
 ## Frequently Asked Questions (FAQ)
 
 ### Why's my game laggy/choppy/unplayable?

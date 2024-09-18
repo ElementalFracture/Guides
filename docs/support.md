@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Thank you for supporting us!"
+---
+
 # Support Elemental Fracture
 ---
 

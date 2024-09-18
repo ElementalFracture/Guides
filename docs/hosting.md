@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Hosting your own server"
+---
+
 # How to Host a Server
 
 This guide explains how to host your own match on a server you control. If you're looking to play in someone else’s match, check out the [setup guide](guide.md). **While Elemental Fracture doesn't provide explicit support in hosting your own servers, such as assistance with setting up portforwarding, we are happy to assist by providing the general steps to get set up.**

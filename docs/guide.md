@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Quick-start Guide"
+---
+
 # Elemental Fracture Quick-Setup Guide
 
 To dive back into the Hollow Lands, follow the instructions below to set up the community version of the game.
