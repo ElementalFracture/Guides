@@ -6,7 +6,7 @@ Elemental Fracture emerged from this unique moment in Spellbreak's history. Our 
 
 ## Table of Contents
 We've organized our setup guide to assist as much as possible in getting you into the Hollow Lands as smoothly and easily as possible.
-- [Quickstart Guide](profile/guide.md)
-- [Hosting Your Own Server](profile/hosting.md)
-- [Frequently Asked Questions](profile/faq.md)
-- [Help us stay afloat!](profile/support.md)
+- [Quickstart Guide](./profile/guide.md)
+- [Hosting Your Own Server](./profile/hosting.md)
+- [Frequently Asked Questions](./profile/faq.md)
+- [Help us stay afloat!](./profile/support.md)
