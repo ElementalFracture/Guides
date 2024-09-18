@@ -14,17 +14,21 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      
-      - name: Set up Ruby
+
+      - name: Set up Ruby 2.7 and Bundler
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7 # Choose the Ruby version that matches the GitHub Pages environment
-          bundler-cache: true # Automatically run bundle install
+          ruby-version: '2.7'
+          bundler-cache: true # This caches the gems to speed up builds
+
+      - name: Install Dependencies
+        run: |
+          bundle install
 
       - name: Build and test Jekyll site
         run: |
           bundle exec jekyll build
-          bundle exec jekyll doctor # Optional: Outputs any deprecation or configuration issues
+          bundle exec jekyll doctor # Optional: Outputs any warnings
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
