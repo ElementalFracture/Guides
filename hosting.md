@@ -80,7 +80,7 @@ In most cases, NAT Gateways block incoming connections from the internet. You’
 
 ## Running the Server
 
-To host a server, you need to download [the server files](https://cdn.elefrac.com/server/server.zip)`, then extract it to a folder of your choice.
+To host a server, you need to download [the server files](https://cdn.elefrac.com/server/server.zip), then extract it to a folder of your choice.
 
 ### Prerequisites
 
