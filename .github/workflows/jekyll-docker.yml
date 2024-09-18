@@ -1,9 +1,9 @@
-name: Jekyll site CI
+name: Build and Deploy Jekyll Site
 
 on:
   push:
     branches:
-      - main
+      - main  # Adjust the branch name as needed
   pull_request:
     branches:
       - main
@@ -13,22 +13,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout Code
+        uses: actions/checkout@v2
 
-      - name: Set up Ruby 2.7 and Bundler
+      - name: Set up Ruby 3.x
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7'
-          bundler-cache: true # This caches the gems to speed up builds
+          ruby-version: '3.0'  # You can adjust this to a newer version
+          bundler-cache: true
+
+      - name: Install Bundler
+        run: gem install bundler
 
       - name: Install Dependencies
-        run: |
-          bundle install
+        run: bundle install
 
-      - name: Build and test Jekyll site
-        run: |
-          bundle exec jekyll build
-          bundle exec jekyll doctor # Optional: Outputs any warnings
+      - name: Build Jekyll Site
+        run: bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
