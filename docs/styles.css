@@ -1,3 +1,7 @@
+header {
+  display: none;
+}
+
 /* Styling for the banner */
 .banner {
     text-align: center;
