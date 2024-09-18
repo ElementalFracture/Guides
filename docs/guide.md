@@ -10,7 +10,8 @@ To dive back into the Hollow Lands, follow the instructions below to set up the 
 
 ---
 
-## A. Setting Up Using the Launcher - Highly Recommended!
+## A. Setting Up Using the Launcher
+### Highly recommended!
 
 1. Download our Community Version Launcher from [our website](https://elefrac.com/)
 2. Launch the installer and follow the installation instructions.
@@ -23,7 +24,7 @@ To dive back into the Hollow Lands, follow the instructions below to set up the 
 
 ---
 
-### Connecting to Our Servers
+## Connecting to Our Servers
 
 Elemental Fracture hosts several dedicated servers for NA and EU, including Solos, Duos, Squads, and other game modes. To connect to a server:
 
@@ -39,8 +40,9 @@ Elemental Fracture hosts several dedicated servers for NA and EU, including Solo
 
 Feel free to use these servers for your brawls and battles! However, please be considerate when using them for 1v1 matches within our community. During times of high demand or leading up to public events, we encourage you to host your own server to ensure smooth gameplay for all participants. Happy gaming!
 
-### B. Manual Setup - **Only conduct the steps below if the launcher is not working for you!**
-
+---
+## B. Manual Setup
+### **Only conduct the steps below if the launcher is not working for you!**
 #### Installing the Base Game
 
 1. Download the [Base Game](https://cdn.elefrac.com/game/elefracbase.zip).
