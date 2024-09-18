@@ -290,4 +290,5 @@ DEPENDENCIES
   wdm (~> 0.1)
 
 BUNDLED WITH
-   2.5.19
+   2.3.26
+
